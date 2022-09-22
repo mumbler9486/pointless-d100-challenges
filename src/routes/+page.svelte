@@ -186,8 +186,10 @@
 	</p>
 	<p />
 	<div class="card">
-		<button on:click={generateChallenge}>Challenge Me Bitch</button>
-		<button on:click={() => generateChallengeXTimes(10)}> Challenge Me Bitch (10x)</button>
+		<button class="btn" on:click={generateChallenge}>Challenge Me Bitch</button>
+		<button class="btn" on:click={() => generateChallengeXTimes(10)}>
+			Challenge Me Bitch (10x)
+		</button>
 
 		<ol>
 			{#each generatedChallenges as challenge, i}
