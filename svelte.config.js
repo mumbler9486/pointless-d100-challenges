@@ -5,7 +5,9 @@ const prod = process.env.NODE_ENV === "production";
 console.log("Environment:", process.env.NODE_ENV);
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: preprocess(),
+	preprocess: preprocess({
+		postcss: true,
+	}),
 
 	kit: {
 		paths: {
