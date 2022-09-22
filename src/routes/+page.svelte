@@ -178,48 +178,21 @@
 	};
 </script>
 
-<main>
-	<h1>Pointless D100/HTPD Challenge Generator</h1>
-	<p>
-		If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
-		challenge...
-	</p>
-	<p />
-	<div class="card">
-		<button class="btn" on:click={generateChallenge}>Challenge Me Bitch</button>
-		<button class="btn" on:click={() => generateChallengeXTimes(10)}>
-			Challenge Me Bitch (10x)
-		</button>
+<div class="hero">
+	<div class="hero-content text-center">
+		<div class="max-w-lg">
+			<h1 class="text-5xl font-bold">Pointless D100/HTPD Challenge Generator</h1>
+			<p class="my-6">
+				If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
+				challenge...
+			</p>
+			<button class="btn btn-primary" on:click={generateChallenge}>Challenge Me Bitch</button>
 
-		<ol>
-			{#each generatedChallenges as challenge, i}
-				<li>{challenge}</li>
-			{/each}
-		</ol>
+			<ol class="mt-6">
+				{#each generatedChallenges as challenge, i}
+					<li class="mt-2">{challenge}</li>
+				{/each}
+			</ol>
+		</div>
 	</div>
-	<div />
-</main>
-
-<style>
-	.logo {
-		height: 6em;
-		padding: 1.5em;
-		will-change: filter;
-	}
-	.logo:hover {
-		filter: drop-shadow(0 0 2em #646cffaa);
-	}
-	.logo.svelte:hover {
-		filter: drop-shadow(0 0 2em #ff3e00aa);
-	}
-	.read-the-docs {
-		color: #888;
-	}
-	li {
-		margin-top: 2rem;
-	}
-	p {
-		color: gray;
-		font-size: 12px;
-	}
-</style>
+</div>
