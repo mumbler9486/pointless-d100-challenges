@@ -1,4 +1,6 @@
 <script lang="ts">
+	import CopyClipboard from 'src/components/CopyClipboard.svelte';
+
 	let generatedChallenges: string[] = [];
 
 	const modifier = ['no', 'only', 'once a minute', '1x', '2x', '3x', '69x', ''];
@@ -190,7 +192,7 @@
 
 			<ol class="mt-6">
 				{#each generatedChallenges as challenge, i}
-					<li class="mt-2">{challenge}</li>
+					<li class="mt-2">{challenge} <CopyClipboard copyData={challenge} /></li>
 				{/each}
 			</ol>
 		</div>
