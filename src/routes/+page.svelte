@@ -1,7 +1,11 @@
 <script lang="ts">
+	import ChallengeView, {
+		type Challenge,
+		type GearRestriction
+	} from 'src/components/ChallengeView.svelte';
 	import CopyClipboard from 'src/components/CopyClipboard.svelte';
 
-	let generatedChallenges: string[] = [];
+	let generatedChallenges: Challenge[] = [];
 
 	const modifier = ['no', 'only', 'once a minute', '1x', '2x', '3x', '69x', ''];
 
@@ -164,37 +168,41 @@
 			modifiedChal.push(`${modi} ${x}`);
 		});
 
-		const asClasses = pickAFewRandom(classes, 2);
-		const challengeString = `${modifiedChal.join(
-			', '
-		)} WHILE ${additionalChal}, as: [${asClasses.join('/')}]`;
+		const challenge = {
+			mainClass: pickRandom(classes),
+			subClass: pickRandom(classes),
 
-		generatedChallenges.push(challengeString);
+			backUnitRestriction: {} as GearRestriction,
+			armsUnitRestriction: {} as GearRestriction,
+			legsUnitRestriction: {} as GearRestriction,
+			otherGearRestrictions: [''],
+
+			skillRestrictions: [''],
+			challenges: modifiedChal,
+
+			extraChallenge: additionalChal
+		} as Challenge;
+
+		generatedChallenges.push(challenge);
 		generatedChallenges = generatedChallenges;
-	};
-
-	const generateChallengeXTimes = (x: number) => {
-		for (let i = 0; i < x; i++) {
-			generateChallenge();
-		}
 	};
 </script>
 
-<div class="hero">
+<div class="hero mt-2">
 	<div class="hero-content text-center">
 		<div class="max-w-lg">
 			<h1 class="text-5xl font-bold">Pointless D100/HTPD Challenge Generator</h1>
-			<p class="my-6">
+			<p class="my-4">
 				If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
 				challenge...
 			</p>
 			<button class="btn btn-primary" on:click={generateChallenge}>Challenge Me Bitch</button>
-
-			<ol class="mt-6">
-				{#each generatedChallenges as challenge, i}
-					<li class="mt-2">{challenge} <CopyClipboard copyData={challenge} /></li>
-				{/each}
-			</ol>
 		</div>
 	</div>
 </div>
+
+{#if generatedChallenges.length > 0}
+	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-12">
+		<ChallengeView challenge={generatedChallenges[generatedChallenges.length - 1]} />
+	</div>
+{/if}

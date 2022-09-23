@@ -6,7 +6,7 @@
 
 <main class="container flex flex-col">
 	<Header />
-	<div class="mt-10">
+	<div>
 		<slot />
 	</div>
 	<Footer />
