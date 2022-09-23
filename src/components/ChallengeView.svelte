@@ -1,33 +1,12 @@
-<script context="module" lang="ts">
-	export interface Challenge {
-		mainClass: string;
-		subClass: string;
-
-		backUnitRestriction: GearRestriction;
-		armsUnitRestriction: GearRestriction;
-		legsUnitRestriction: GearRestriction;
-		otherGearRestrictions: string[];
-
-		skillRestrictions: string[];
-		challenges: string[];
-
-		extraChallenge: string;
-	}
-
-	export interface GearRestriction {
-		part: string;
-		slots: number;
-		restriction: string;
-	}
-</script>
-
 <script lang="ts">
+	import type { Challenge } from 'src/lib/challenge';
+
 	export let challenge: Challenge;
 </script>
 
-<div class="grid gap-2 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 bg-base-200">
+<div class="grid gap-2 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 bg-base-200 rounded">
 	<div class="bg-secondary text-secondary-content p-4 rounded text-2xl col-span-3 text-center">
-		{challenge.mainClass}/{challenge.subClass}
+		{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}
 	</div>
 	<div>
 		<div class="card card-side bg-base-100 shadow-xl">
@@ -68,9 +47,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="bg-accent text-accent-content p-4 text-xl col-span-3 shadow-lg text-center">
+	<div class="bg-accent text-accent-content rounded p-4 text-xl col-span-3 shadow-lg text-center">
 		<div>
-			While <span class="text-bold">{challenge.extraChallenge}</span>
+			While <span class="text-bold">{challenge.bigChallenge}</span>
 		</div>
 	</div>
 </div>
