@@ -10,10 +10,16 @@ export const pickRandom = <TValue>(list: TValue[]) => {
   return list[index];
 };
 
-export const pickAFewRandom = <TValue>(list: TValue[], count: number) => {
+export const pickAFewRandomUniquely = <TValue>(list: TValue[], count: number) => {
+  let listCopy = list.slice();
   const result = [];
   for (let i = 0; i < count; i++) {
-    result.push(pickRandom(list));
+    if (list.length == 0) {
+      return result;
+    }
+    const picking = pickRandom(listCopy);
+    listCopy = listCopy.filter(x => x != picking);
+    result.push(picking);
   }
   return result;
 };

@@ -14,9 +14,36 @@
 				<h2 class="card-title">Gear restrictions</h2>
 				<strong>Units</strong>
 				<ul>
-					<li>Back: {challenge.backUnitRestriction}</li>
-					<li>Arms: {challenge.armsUnitRestriction}</li>
-					<li>Legs: {challenge.legsUnitRestriction}</li>
+					<li>
+						<strong>{challenge.backUnitRestriction.name}</strong>
+						[{challenge.backUnitRestriction.slots}s]
+						{`(SGA: ${challenge.backUnitRestriction.sGradeAugment})`}
+						<ul>
+							{#each challenge.backUnitRestriction.restrictions as unitRes}
+								<li>• {unitRes}</li>
+							{/each}
+						</ul>
+					</li>
+					<li>
+						<strong>{challenge.armsUnitRestriction.name}</strong>
+						[{challenge.armsUnitRestriction.slots}s]
+						{`(SGA: ${challenge.armsUnitRestriction.sGradeAugment})`}
+						<ul>
+							{#each challenge.armsUnitRestriction.restrictions as unitRes}
+								<li>• {unitRes}</li>
+							{/each}
+						</ul>
+					</li>
+					<li>
+						<strong>{challenge.legsUnitRestriction.name}</strong>
+						[{challenge.legsUnitRestriction.slots}s]
+						{`(SGA: ${challenge.legsUnitRestriction.sGradeAugment})`}
+						<ul>
+							{#each challenge.legsUnitRestriction.restrictions as unitRes}
+								<li>• {unitRes}</li>
+							{/each}
+						</ul>
+					</li>
 				</ul>
 				<strong>Other Gear</strong>
 				<ul>

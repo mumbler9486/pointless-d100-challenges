@@ -2,7 +2,7 @@
 	import ChallengeView from 'src/components/ChallengeView.svelte';
 	import CopyClipboard from 'src/components/CopyClipboard.svelte';
 
-	import type { Challenge, GearRestriction } from 'src/lib/challenge';
+	import type { Challenge } from 'src/lib/challenge';
 	import { generateChallenge } from 'src/lib/generators/challengeGenerator';
 
 	let generatedChallenges: Challenge[] = [];

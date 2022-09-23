@@ -1,4 +1,4 @@
-import { pickAFewRandom, pickRandom, randInt } from "../utils/random";
+import { pickAFewRandomUniquely, pickRandom, randInt } from "../utils/random";
 
 const modifiableChallenges = [
   'unitless',
@@ -78,7 +78,7 @@ const modifiableChallenges = [
 const modifier = ['no', 'only', 'once a minute', '1x', '2x', '3x', '69x', ''];
 
 export const generateConditions = () => {
-  const challengeList = pickAFewRandom(modifiableChallenges, randInt(2, 6));
+  const challengeList = pickAFewRandomUniquely(modifiableChallenges, randInt(2, 6));
 
   const modifiedChal = [] as string[];
   challengeList.forEach((x) => {

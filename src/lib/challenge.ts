@@ -2,9 +2,9 @@ export interface Challenge {
   mainClass: string;
   subClass?: string;
 
-  backUnitRestriction: GearRestriction;
-  armsUnitRestriction: GearRestriction;
-  legsUnitRestriction: GearRestriction;
+  backUnitRestriction: UnitRestriction;
+  armsUnitRestriction: UnitRestriction;
+  legsUnitRestriction: UnitRestriction;
   otherGearRestrictions: string[];
 
   skillRestrictions: string[];
@@ -13,8 +13,9 @@ export interface Challenge {
   bigChallenge: string;
 }
 
-export interface GearRestriction {
-  part: string;
+export interface UnitRestriction {
+  name: string;
   slots: number;
-  restriction: string;
+  sGradeAugment: string;
+  restrictions: string[];
 }
