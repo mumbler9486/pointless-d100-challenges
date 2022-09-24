@@ -12,8 +12,8 @@ export interface Challenge {
 
   weaponRestriction: WeaponRestriction;
 
-  skillRestrictions: string[];
-  challenges: string[];
+  classRestrictions: string[];
+  otherChallenges: string[];
 
   bigChallenge: string;
 }

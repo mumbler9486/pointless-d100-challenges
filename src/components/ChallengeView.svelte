@@ -60,7 +60,7 @@
 		<div class="card-body">
 			<h2 class="card-title">Skill Restrictions</h2>
 			<ul>
-				{#each challenge.skillRestrictions ?? [] as skillRes}
+				{#each challenge.classRestrictions ?? [] as skillRes}
 					<li>{skillRes}</li>
 				{/each}
 			</ul>
@@ -70,7 +70,7 @@
 		<div class="card-body">
 			<h2 class="card-title">Challenges</h2>
 			<ul>
-				{#each challenge.challenges ?? [] as chal}
+				{#each challenge.otherChallenges ?? [] as chal}
 					<li>• {chal}</li>
 				{/each}
 			</ul>

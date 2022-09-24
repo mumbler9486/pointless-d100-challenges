@@ -23,8 +23,8 @@ export const generateChallenge = () => {
 
     weaponRestriction,
 
-    skillRestrictions: [''],
-    challenges: conditions,
+    classRestrictions: [''],
+    otherChallenges: conditions,
 
     bigChallenge: additionalChallenge
   } as Challenge
