@@ -25,7 +25,7 @@ const additionalChallenges = [
   'whenever sodam is stunned take 1000 damage using genon, no healing for 1 minute',
   'even though te buff is not allowed in d100 (I know, I know), go to expedition and have someone te buff you with a deband ONLY for no reason every time you start the quest',
   'following a youtube guide for the class from 3 years ago prior to NGS release in NA',
-  'sc5 dance once every time sodam does the 2 swipes attack',
+  'SC5 dance once every time you take damage',
   'while watching the episode oracle anime at 15x speed, every time Matoi takes a hit punched, take 1000 damage with genon',
   'everytime someone in fleet chat asks "when/is maint?", lookup the maint schedule in their timezone and reply with a discord timestamped message'
 ];

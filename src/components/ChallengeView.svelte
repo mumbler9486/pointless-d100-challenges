@@ -45,10 +45,12 @@
 						</ul>
 					</li>
 				</ul>
-				<strong>Other Gear</strong>
+				<strong>Weapon</strong>
+				{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
+
 				<ul>
-					{#each challenge.otherGearRestrictions ?? [] as gearRes}
-						<li>{gearRes}</li>
+					{#each challenge.weaponRestriction.restrictions ?? [] as gearRes}
+						<li>• {gearRes}</li>
 					{/each}
 				</ul>
 			</div>
@@ -69,7 +71,7 @@
 			<h2 class="card-title">Challenges</h2>
 			<ul>
 				{#each challenge.challenges ?? [] as chal}
-					<li>{chal}</li>
+					<li>• {chal}</li>
 				{/each}
 			</ul>
 		</div>

@@ -1,5 +1,5 @@
-import type { UnitRestriction } from "../challenge";
-import { pickAFewRandomUniquely, pickRandom, randInt } from "../utils/random";
+import type { UnitRestriction } from "../units";
+import { coinFlip, pickAFewRandomUniquely, pickRandom, randInt } from "../utils/random";
 
 const s6Sgas = [
   "S6: Dodging Whistle",
@@ -178,7 +178,6 @@ const unitConditions = [
   "Must have a receptor type augment",
   "Unit grind level is less than +5",
   "Unit is not grinded (+0)",
-  "Must have a Ligand type augment",
   "Must use a Reaper/Slayer augment",
   "Must use a ward/panic/blind/poison augment",
   "Must have might boost",
@@ -202,14 +201,15 @@ const unitConditions = [
   "Must maximize dex stat",
   "Must maximize PP stat",
   "Must have a catalyst augment",
+  "Alright screw the unit chosen on this slot, go to a non-risk expedition, kill the boss, and the first unit you pick up is your unit. Do not upgrade/affix this unit.",
 ]
 
 export const generateUnitRestrictions = () => {
 
   // Unit set
-  const useUnitSet = randInt(1, 10) <= 8;
+  const useUnitSet = coinFlip(0.8);
   if (useUnitSet) {
-    return generateUnitSet()
+    return generateUnitSet();
   }
 
   // Unique unit per slot
@@ -225,7 +225,7 @@ export const generateUnitRestrictions = () => {
 }
 
 const generateUnitSet = () => {
-  const use13Star = randInt(1, 10) > 4
+  const use13Star = coinFlip();
   const unitSet = use13Star ? pickRandom(unitSeries13Star) : pickRandom(unitSeries)
   const slots = randInt(0, 8);
   const restrictions = pickAFewRandomUniquely(unitConditions, randInt(1, 3));
@@ -260,13 +260,13 @@ const generateUnitRestriction = (
   const slots = randInt(0, 8);
 
   // Generate unit to use
-  const is13Star = randInt(1, 10) > 4;
+  const is13Star = coinFlip();
   let sga: string | undefined = "None";
   let unit = "None";
 
   if (is13Star) {
     unit = pickRandom(pickFrom13StarUnits)
-    if (randInt(1, 10) >= 2) {
+    if (coinFlip(0.9)) {
       sga = pickRandom(pickFromSgas);
     }
     else {
@@ -287,7 +287,7 @@ const generateUnitRestriction = (
 }
 
 const getSGA = (sgaList: string[]) => {
-  return randInt(1, 10) >= 2 ? pickRandom(sgaList) : "None";
+  return coinFlip(0.9) ? pickRandom(sgaList) : "None";
 }
 
 const generateRestrictions = () => {

@@ -1,30 +1,30 @@
 import { pickRandom } from "../utils/random";
+import { PlayerClass } from "../classes";
 
 const scionClasses = [
-  'Hero',
-  'Phantom',
-  'Etoile',
-  'Luster',
+  PlayerClass.Hero,
+  PlayerClass.Phantom,
+  PlayerClass.Etoile,
+  PlayerClass.Luster,
 ];
 
 const classes = [
-  'Erper (*wildcard)',
-  'Hunter',
-  'Fighter',
-  'Ranger',
-  'Gunner',
-  'Force',
-  'Techer',
-  'Braver',
-  'Bouncer',
-  'Bouncer',
-  'Summoner',
+  PlayerClass.Erper,
+  PlayerClass.Hunter,
+  PlayerClass.Fighter,
+  PlayerClass.Ranger,
+  PlayerClass.Gunner,
+  PlayerClass.Force,
+  PlayerClass.Techer,
+  PlayerClass.Braver,
+  PlayerClass.Bouncer,
+  PlayerClass.Summoner,
   ...scionClasses
 ];
 
-export interface Class {
-  main: string;
-  sub?: string;
+export interface ClassPairing {
+  main: PlayerClass;
+  sub?: PlayerClass;
 }
 
 export const generateClass = () => {
@@ -33,8 +33,8 @@ export const generateClass = () => {
   //Scions cannot have sub
   if (scionClasses.includes(main)) {
     return {
-      main,
-    } as Class
+      main: main,
+    } as ClassPairing
   }
 
   const sub = pickRandom(classes.filter(c => c != main && c != "Hero"));
@@ -42,5 +42,5 @@ export const generateClass = () => {
   return {
     main,
     sub
-  } as Class;
+  } as ClassPairing;
 }

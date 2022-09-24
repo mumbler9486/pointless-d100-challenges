@@ -1,0 +1,16 @@
+export enum PlayerClass {
+  Erper = 'Erper (*wildcard)',
+  Hunter = 'Hunter',
+  Fighter = 'Fighter',
+  Ranger = 'Ranger',
+  Gunner = 'Gunner',
+  Force = 'Force',
+  Techer = 'Techer',
+  Braver = 'Braver',
+  Bouncer = 'Bouncer',
+  Summoner = 'Summoner',
+  Hero = 'Hero',
+  Phantom = 'Phantom',
+  Etoile = 'Etoile',
+  Luster = 'Luster',
+}
