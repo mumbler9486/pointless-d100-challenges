@@ -30,6 +30,6 @@ const additionalChallenges = [
   'everytime someone in fleet chat asks "when/is maint?", lookup the maint schedule in their timezone and reply with a discord timestamped message'
 ];
 
-export const generateAdditonalChallenge = () => {
+export const generateBigChallenge = () => {
   return pickRandom(additionalChallenges);
 }

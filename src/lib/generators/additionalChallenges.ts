@@ -77,7 +77,7 @@ const modifiableChallenges = [
 
 const modifier = ['no', 'only', 'once a minute', '1x', '2x', '3x', '69x', ''];
 
-export const generateConditions = () => {
+export const generateAdditionalChallenges = () => {
   const challengeList = pickAFewRandomUniquely(modifiableChallenges, randInt(2, 6));
 
   const modifiedChal = [] as string[];
