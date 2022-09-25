@@ -2,6 +2,10 @@
 	import type { Challenge } from 'src/lib/challenge';
 
 	export let challenge: Challenge;
+
+	const listEmptyPlaceholder = (list: string[]) => {
+		return list && list.length > 1 ? list : ['None'];
+	};
 </script>
 
 <div class="grid gap-2 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 bg-base-200 rounded">
@@ -19,7 +23,7 @@
 						[{challenge.backUnitRestriction.slots}s]
 						{`(SGA: ${challenge.backUnitRestriction.sGradeAugment})`}
 						<ul>
-							{#each challenge.backUnitRestriction.restrictions as unitRes}
+							{#each listEmptyPlaceholder(challenge.backUnitRestriction.restrictions) as unitRes}
 								<li>• {unitRes}</li>
 							{/each}
 						</ul>
@@ -29,7 +33,7 @@
 						[{challenge.armsUnitRestriction.slots}s]
 						{`(SGA: ${challenge.armsUnitRestriction.sGradeAugment})`}
 						<ul>
-							{#each challenge.armsUnitRestriction.restrictions as unitRes}
+							{#each listEmptyPlaceholder(challenge.armsUnitRestriction.restrictions) as unitRes}
 								<li>• {unitRes}</li>
 							{/each}
 						</ul>
@@ -39,7 +43,7 @@
 						[{challenge.legsUnitRestriction.slots}s]
 						{`(SGA: ${challenge.legsUnitRestriction.sGradeAugment})`}
 						<ul>
-							{#each challenge.legsUnitRestriction.restrictions as unitRes}
+							{#each listEmptyPlaceholder(challenge.legsUnitRestriction.restrictions) as unitRes}
 								<li>• {unitRes}</li>
 							{/each}
 						</ul>
@@ -49,7 +53,7 @@
 				{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
 
 				<ul>
-					{#each challenge.weaponRestriction.restrictions ?? [] as gearRes}
+					{#each listEmptyPlaceholder(challenge.weaponRestriction.restrictions) as gearRes}
 						<li>• {gearRes}</li>
 					{/each}
 				</ul>
@@ -58,10 +62,10 @@
 	</div>
 	<div class="card card-side bg-base-100 shadow-xl">
 		<div class="card-body">
-			<h2 class="card-title">Skill Restrictions</h2>
+			<h2 class="card-title">Class Restrictions</h2>
 			<ul>
-				{#each challenge.classRestrictions ?? [] as skillRes}
-					<li>• {skillRes}</li>
+				{#each listEmptyPlaceholder(challenge.classRestrictions) ?? [] as classRes}
+					<li>• {classRes}</li>
 				{/each}
 			</ul>
 		</div>
@@ -70,7 +74,7 @@
 		<div class="card-body">
 			<h2 class="card-title">Challenges</h2>
 			<ul>
-				{#each challenge.otherChallenges ?? [] as chal}
+				{#each listEmptyPlaceholder(challenge.otherChallenges) ?? [] as chal}
 					<li>• {chal}</li>
 				{/each}
 			</ul>
