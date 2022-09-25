@@ -13,7 +13,7 @@
 		{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}
 	</div>
 	<div>
-		<div class="card card-side bg-base-100 shadow-xl text-sm">
+		<div class="card card-side ml-2 bg-base-100 shadow-xl text-sm">
 			<div class="card-body">
 				<h2 class="card-title">Gear restrictions</h2>
 				<strong>Units</strong>
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card card-side bg-base-100 shadow-xl text-sm">
+	<div class="card card-side mr-2 bg-base-100 shadow-xl text-sm">
 		<div class="card-body">
 			<h2 class="card-title">Challenges</h2>
 			<ul>
