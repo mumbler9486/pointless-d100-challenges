@@ -13,7 +13,7 @@
 		{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}
 	</div>
 	<div>
-		<div class="card card-side bg-base-100 shadow-xl">
+		<div class="card card-side bg-base-100 shadow-xl text-sm">
 			<div class="card-body">
 				<h2 class="card-title">Gear restrictions</h2>
 				<strong>Units</strong>
@@ -53,7 +53,7 @@
 		</div>
 	</div>
 	<div>
-		<div class="card card-side bg-base-100 shadow-xl">
+		<div class="card card-side bg-base-100 shadow-xl text-sm">
 			<div class="card-body">
 				<h2 class="card-title">{challenge.mainClass} Restrictions</h2>
 				<ul>
@@ -63,7 +63,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="card card-side bg-base-100 shadow-xl mt-2">
+		<div class="card card-side bg-base-100 shadow-xl mt-2 text-sm">
 			<div class="card-body">
 				<h2 class="card-title">Weapon Restrictions</h2>
 				{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card card-side bg-base-100 shadow-xl">
+	<div class="card card-side bg-base-100 shadow-xl text-sm">
 		<div class="card-body">
 			<h2 class="card-title">Challenges</h2>
 			<ul>
