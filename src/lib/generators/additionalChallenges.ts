@@ -72,7 +72,19 @@ const modifiableChallenges = [
   'ringless run',
   'change to a different weapon (weapon cannot be used for the rest of the run) every time you take a hit',
   'delete one of your best units for every quest fail',
-  '(htpd only) every time your teammate says "brb" immediately start the quest or next phase while they\'re AFK'
+  '(htpd only) every time your teammate says "brb" immediately start the quest or next phase while they\'re AFK',
+  "PP battery or other PP recovery weapons banned",
+  "PP battery or other PP recovery weapons banned and only S2+S3 Lucent Adversity is allowed (genon banned)",
+  "No Sub-pallette",
+  "2-button type weapon pallete",
+  "Build-up PAs banned",
+  "Custom techs/PAs banned, remove them for run",
+  "Must endure a blizzard attack once",
+  "No food buffs",
+  "No timed abilities",
+  "No timed abilities that nullify status effects",
+  "No Custom techs or custom PAs (Use only their normal variant)",
+  "Critical strike ring banned (including added to units)"
 ];
 
 const modifier = ['no', 'only', 'once a minute', '1x', '2x', '3x', '69x', ''];

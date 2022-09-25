@@ -4,6 +4,7 @@ import { generateClass } from "./classGenerator"
 import { generateAdditionalChallenges } from "./additionalChallenges"
 import { generateUnitRestrictions } from "./unitGenerator"
 import { generateWeaponRestriction } from "./weaponConditions"
+import { generateClassRestrictions } from "./classRestrictions"
 
 export const generateChallenge = () => {
   const { main: mainClass, sub: subClass } = generateClass();
@@ -12,6 +13,8 @@ export const generateChallenge = () => {
 
   const { backUnit, armsUnit, legsUnit } = generateUnitRestrictions();
   const weaponRestriction = generateWeaponRestriction(mainClass);
+
+  const classRestrictions = generateClassRestrictions(mainClass);
 
   return {
     mainClass: mainClass,
@@ -23,7 +26,7 @@ export const generateChallenge = () => {
 
     weaponRestriction,
 
-    classRestrictions: [''],
+    classRestrictions: classRestrictions,
     otherChallenges: conditions,
 
     bigChallenge

@@ -201,7 +201,8 @@ const memeSeries = {
     "Solid Recurve",
     "Susano Hiki",
     "Longbow",
-    "Bigglow v2 (GG global use Bigglow)"
+    "Bigglow v2 (GG global use Bigglow)",
+    "Cuvele Vesper"
   ],
   [WeaponType.Rod]: [
     "Megalith Rod",

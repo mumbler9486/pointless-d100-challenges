@@ -61,7 +61,7 @@
 			<h2 class="card-title">Skill Restrictions</h2>
 			<ul>
 				{#each challenge.classRestrictions ?? [] as skillRes}
-					<li>{skillRes}</li>
+					<li>• {skillRes}</li>
 				{/each}
 			</ul>
 		</div>
