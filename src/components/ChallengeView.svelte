@@ -89,7 +89,7 @@
 		</div>
 	</div>
 	<div class="bg-accent text-accent-content rounded p-4 text-xl col-span-3 shadow-lg text-center">
-		<div>
+		<div class="line-through">
 			While <span class="text-bold">{challenge.bigChallenge}</span>
 		</div>
 	</div>
