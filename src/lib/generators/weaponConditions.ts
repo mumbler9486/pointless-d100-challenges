@@ -66,7 +66,7 @@ const specialChallenge = [
   "Wildcard (any non meta weapon at the time of any episode)",
   "No weapon (fist)",
   "Only use gunblade (luster must use all class non-gunblade)",
-  "Go into an non-risk expedition, kill the boss, and the first weapon you pick up (including unappraised) applicable for your class is the weapon you main. Do not upgrade/affix this weapon."
+  "Go into an non-risk expedition, kill the boss, and the first weapon you pick up (including unappraised) applicable for your class is the weapon you main. Do not upgrade/affix this weapon. Ignore other challenges for the weapon."
 ];
 
 interface MemeMap {

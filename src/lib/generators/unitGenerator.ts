@@ -169,7 +169,8 @@ const unitSeries = [
   "Sub / Solid Barrier",
   "Sub / Photon Barrier",
   "Sub / Weapon Barrier",
-  "Back / Rappy Shine and Any"
+  "Back / Rappy Shine and Any",
+  "Go to a non-risk expedition, kill the boss, and the first unit you pick up is your unit. Do not upgrade/affix this unit. Ignore the other challenges for this unit.",
 ];
 
 const unitConditions = [
@@ -201,7 +202,6 @@ const unitConditions = [
   "Must maximize dex stat",
   "Must maximize PP stat",
   "Must have a catalyst augment",
-  "Alright screw the unit chosen on this slot, go to a non-risk expedition, kill the boss, and the first unit you pick up is your unit. Do not upgrade/affix this unit.",
 ]
 
 export const generateUnitRestrictions = () => {
