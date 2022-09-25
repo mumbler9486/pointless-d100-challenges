@@ -31,6 +31,7 @@
 
 {#if generatedChallenges.length > 0}
 	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-12">
+		<h1>#{generatedChallenges.length}</h1>
 		<ChallengeView {challenge} />
 	</div>
 {/if}
