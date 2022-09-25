@@ -66,8 +66,10 @@
 		<div class="card card-side bg-base-100 shadow-xl mt-2 text-sm">
 			<div class="card-body">
 				<h2 class="card-title">Weapon Restrictions</h2>
-				{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
-
+				<p>
+					<strong>Main Weapon: </strong>
+					{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
+				</p>
 				<ul>
 					{#each listEmptyPlaceholder(challenge.weaponRestriction.restrictions) as gearRes}
 						<li>• {gearRes}</li>
