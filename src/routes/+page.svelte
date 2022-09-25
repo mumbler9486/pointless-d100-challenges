@@ -6,6 +6,7 @@
 	import { generateChallenge } from 'src/lib/generators/challengeGenerator';
 
 	let generatedChallenges: Challenge[] = [];
+	$: challenge = generatedChallenges[generatedChallenges.length - 1];
 
 	const createChallenge = () => {
 		const newChallenge = generateChallenge();
@@ -30,6 +31,6 @@
 
 {#if generatedChallenges.length > 0}
 	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-12">
-		<ChallengeView challenge={generatedChallenges[generatedChallenges.length - 1]} />
+		<ChallengeView {challenge} />
 	</div>
 {/if}
