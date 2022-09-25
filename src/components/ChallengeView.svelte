@@ -49,7 +49,23 @@
 						</ul>
 					</li>
 				</ul>
-				<strong>Weapon</strong>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="card card-side bg-base-100 shadow-xl">
+			<div class="card-body">
+				<h2 class="card-title">{challenge.mainClass} Restrictions</h2>
+				<ul>
+					{#each listEmptyPlaceholder(challenge.classRestrictions) ?? [] as classRes}
+						<li>• {classRes}</li>
+					{/each}
+				</ul>
+			</div>
+		</div>
+		<div class="card card-side bg-base-100 shadow-xl mt-2">
+			<div class="card-body">
+				<h2 class="card-title">Weapon Restrictions</h2>
 				{challenge.weaponRestriction.name} [{challenge.weaponRestriction.slots}s]
 
 				<ul>
@@ -58,16 +74,6 @@
 					{/each}
 				</ul>
 			</div>
-		</div>
-	</div>
-	<div class="card card-side bg-base-100 shadow-xl">
-		<div class="card-body">
-			<h2 class="card-title">Class Restrictions</h2>
-			<ul>
-				{#each listEmptyPlaceholder(challenge.classRestrictions) ?? [] as classRes}
-					<li>• {classRes}</li>
-				{/each}
-			</ul>
 		</div>
 	</div>
 	<div class="card card-side bg-base-100 shadow-xl">
