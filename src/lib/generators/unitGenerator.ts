@@ -157,7 +157,7 @@ const unitSeries13Star = [
   "Rivalate Series",
   "Atlas Series",
   "Schevelle Series",
-  "13* divide unit"
+  "13* Divide unit"
 ];
 
 const unitSeries = [
@@ -170,6 +170,7 @@ const unitSeries = [
   "Sub / Photon Barrier",
   "Sub / Weapon Barrier",
   "Back / Rappy Shine and Any",
+  "No units",
   "Go to a non-risk expedition, kill the boss, and the first unit you pick up is your unit. Do not upgrade/affix this unit. Ignore the other challenges for this unit.",
 ];
 

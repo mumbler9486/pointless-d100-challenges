@@ -15,7 +15,8 @@ const classRestrictions = {
     "Blaze parry banned",
     "Iron will skill banned",
     "Massive Hunter banned",
-    "Must use maxed fury stance"
+    "Must use maxed fury stance",
+    "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
   ],
   [PlayerClass.Fighter]: [
     "Counter banned",
@@ -55,7 +56,8 @@ const classRestrictions = {
     "Shunka banned",
     "Counter banned",
     "Steadfast will katana",
-    "Use Weak stance bow in phase 3"
+    "Use Weak stance bow in phase 3",
+    "Million storm must be used for 5 seconds every 2 minutes"
   ],
   [PlayerClass.Bouncer]: [
     "Cannot activate techs by weapon action",
@@ -67,13 +69,15 @@ const classRestrictions = {
     "Sweet box empty",
     "Popple only",
     "Viola only",
-    "Randomly pick your sweetbox using a dice roll for each slot"
+    "Randomly pick your sweetbox using a dice roll for each slot",
+    "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
   ],
   [PlayerClass.Hero]: [
     "Every phase change, change weapons, use that weapon for the entire phase",
     "Must puke dive",
     "Anti banned",
-    "Hero finish banned"
+    "Hero finish banned",
+    "Megiverse banned",
   ],
   [PlayerClass.Phantom]: [
     "Every phase change, change weapons, use that weapon for the entire phase",
@@ -84,7 +88,10 @@ const classRestrictions = {
     "Use only the Phantom rod PAs (only shifta/deband/resta/anti allowed)",
     "Stand completely still, dodge counter allowed",
     "Shift kugel for 5 seconds every 2 minutes",
-    "Phantom finish banned"
+    "Phantom finish banned",
+    "Zanverse banned",
+    "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
+    "100% uptime on shifted massen",
   ],
   [PlayerClass.Etoile]: [
     "Every phase change, change weapons, use that weapon for the entire phase",
@@ -100,6 +107,8 @@ const classRestrictions = {
     "Every time you use a PA, the next one you must use a different PA or attack",
     "Luster finish banned",
     "Stay below 500 volts",
+    "Smart PA only",
+    "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
   ],
 };
 

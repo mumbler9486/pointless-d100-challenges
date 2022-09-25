@@ -286,7 +286,8 @@ const weaponConditions = [
   "If applicable do not affix an SGA in the S5 slot",
   "Do not use any SGA slot on this weapon if applicable",
   "Must use a Timeflow ___ type S-grade augment",
-  "Must use S4: Lifesteal Strike"
+  "Must use S4: Lifesteal Strike",
+  "Phrase decay type affixes banned"
 ];
 
 const weaponApplicableClass = {
