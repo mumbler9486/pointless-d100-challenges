@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ChallengeView from 'src/components/ChallengeView.svelte';
+	import ChallengeView from 'src/components/challenge/ChallengeView.svelte';
 
 	import type { Challenge } from 'src/lib/challenge';
 	import { generateChallenge } from 'src/lib/generators/challengeGenerator';
