@@ -29,7 +29,7 @@
 				If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
 				challenge...
 			</p>
-			<div class="flex gap-2">
+			<div class="grid gap-2 grid-cols-3">
 				<ClassSelector bind:selection={mainClassChoice} />
 				<ClassSelector subClass bind:selection={subClassChoice} />
 				<button class="btn btn-primary" on:click={createChallenge}>Challenge Me Bitch</button>
