@@ -42,10 +42,10 @@ const modifiableChallenges = [
   "No timed abilities that nullify status effects",
   "No custom techs or custom PAs (Use only their normal variant)",
   "Critical strike ring banned (including added to units)",
-  'standing completely still',
-  'minimizing the number of jumps used (including PAs that put you in the air)',
-  'getting all goddess buffs',
-  'every triple slam you must take damage',
+  'Standing completely still',
+  'Minimizing the number of jumps used (including PAs that put you in the air)',
+  'Getting all goddess buffs',
+  'Every triple slam you must take damage',
 ];
 
 export const generateAdditionalChallenges = () => {

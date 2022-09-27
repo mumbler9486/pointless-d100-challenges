@@ -11,7 +11,7 @@
 		<div class="card-body">
 			<h2 class="card-title">{mainClass} Restrictions</h2>
 			<ul>
-				{#each listEmptyPlaceholder(classRestrictions) ?? [] as classRes}
+				{#each listEmptyPlaceholder(classRestrictions, 'None') ?? [] as classRes}
 					<li>• {classRes}</li>
 				{/each}
 			</ul>
