@@ -15,6 +15,9 @@
 					<li>• {classRes}</li>
 				{/each}
 			</ul>
+			{#if classRestrictions.includes('Must use the meme Ph sub pallete')}
+				<img src="images/ph_meme_weapon_pallete.png" alt="ph meme sub-pallete" />
+			{/if}
 		</div>
 	</div>
 </div>

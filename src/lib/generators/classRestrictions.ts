@@ -92,6 +92,7 @@ const classRestrictions = {
     "Zanverse banned",
     "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
     "100% uptime on shifted massen",
+    "Must use the meme Ph sub pallete"
   ],
   [PlayerClass.Etoile]: [
     "Every phase change, change weapons, use that weapon for the entire phase",

@@ -31,7 +31,7 @@
 			</p>
 			<div class="grid gap-2 grid-cols-3">
 				<ClassSelector bind:selection={mainClassChoice} />
-				<ClassSelector subClass bind:selection={subClassChoice} />
+				<ClassSelector selectSubClass bind:selection={subClassChoice} />
 				<button class="btn btn-primary" on:click={createChallenge}>Challenge Me Bitch</button>
 			</div>
 		</div>
