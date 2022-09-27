@@ -112,8 +112,8 @@ const classRestrictions = {
   ],
 };
 
-export const generateClassRestrictions = (playerClass: PlayerClass) => {
-  const restrictions = classRestrictions[playerClass];
+export const generateClassRestrictions = (playerMainClass: PlayerClass) => {
+  const restrictions = classRestrictions[playerMainClass];
 
   return pickAFewRandomUniquely(restrictions, randInt(0, 2))
 }
