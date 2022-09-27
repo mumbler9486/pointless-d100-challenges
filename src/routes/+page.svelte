@@ -1,14 +1,19 @@
 <script lang="ts">
 	import ChallengeView from 'src/components/challenge/ChallengeView.svelte';
+	import ClassSelector from 'src/components/ClassSelector.svelte';
 
 	import type { Challenge } from 'src/lib/challenge';
+	import type { PlayerClass } from 'src/lib/classes';
 	import { generateChallenge } from 'src/lib/generators/challengeGenerator';
 
 	let generatedChallenges: Challenge[] = [];
 	$: challenge = generatedChallenges[generatedChallenges.length - 1];
 
+	let mainClassChoice: PlayerClass | undefined;
+	let subClassChoice: PlayerClass | undefined;
+
 	const createChallenge = () => {
-		const newChallenge = generateChallenge();
+		const newChallenge = generateChallenge(mainClassChoice, subClassChoice);
 
 		generatedChallenges.push(newChallenge);
 		generatedChallenges = generatedChallenges;
@@ -23,7 +28,11 @@
 				If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
 				challenge...
 			</p>
-			<button class="btn btn-primary" on:click={createChallenge}>Challenge Me Bitch</button>
+			<div class="flex gap-2">
+				<ClassSelector bind:selection={mainClassChoice} />
+				<ClassSelector subClass bind:selection={subClassChoice} />
+				<button class="btn btn-primary" on:click={createChallenge}>Challenge Me Bitch</button>
+			</div>
 		</div>
 	</div>
 </div>
