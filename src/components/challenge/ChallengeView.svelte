@@ -11,7 +11,7 @@
 
 <div class="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-base-200 p-2 rounded">
 	<div class="bg-secondary text-secondary-content p-4 rounded text-2xl col-span-3 text-center">
-		<div class="fixed">#{id}</div>
+		<div class="absolute">#{id}</div>
 		<div>{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}</div>
 	</div>
 	<div class="row-start-2">
