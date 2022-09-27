@@ -8,6 +8,7 @@
 
 	let generatedChallenges: Challenge[] = [];
 	$: challenge = generatedChallenges[generatedChallenges.length - 1];
+	$: challengeId = generatedChallenges.length;
 
 	let mainClassChoice: PlayerClass | undefined;
 	let subClassChoice: PlayerClass | undefined;
@@ -39,7 +40,6 @@
 
 {#if generatedChallenges.length > 0}
 	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-12">
-		<h1>#{generatedChallenges.length}</h1>
-		<ChallengeView {challenge} />
+		<ChallengeView id={challengeId} {challenge} />
 	</div>
 {/if}
