@@ -8,13 +8,13 @@ import { generateClassRestrictions } from "./classRestrictions"
 
 export const generateChallenge = () => {
   const { main: mainClass, sub: subClass } = generateClass();
-  const conditions = generateAdditionalChallenges();
   const bigChallenge = generateBigChallenge();
 
   const { backUnit, armsUnit, legsUnit } = generateUnitRestrictions();
   const weaponRestriction = generateWeaponRestriction(mainClass);
 
   const classRestrictions = generateClassRestrictions(mainClass);
+  const conditions = generateAdditionalChallenges();
 
   return {
     mainClass: mainClass,
