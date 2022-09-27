@@ -14,3 +14,28 @@ export enum PlayerClass {
   Etoile = 'Etoile',
   Luster = 'Luster',
 }
+
+export const scionClasses = [
+  PlayerClass.Hero,
+  PlayerClass.Phantom,
+  PlayerClass.Etoile,
+  PlayerClass.Luster,
+];
+
+export const normalClasses = [
+  PlayerClass.Hunter,
+  PlayerClass.Fighter,
+  PlayerClass.Ranger,
+  PlayerClass.Gunner,
+  PlayerClass.Force,
+  PlayerClass.Techer,
+  PlayerClass.Braver,
+  PlayerClass.Bouncer,
+  PlayerClass.Summoner,
+];
+
+export const classes = [
+  PlayerClass.Erper,
+  ...normalClasses,
+  ...scionClasses
+];

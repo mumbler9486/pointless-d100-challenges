@@ -1,26 +1,6 @@
 import { pickRandom } from "../utils/random";
 import { PlayerClass } from "../classes";
-
-const scionClasses = [
-  PlayerClass.Hero,
-  PlayerClass.Phantom,
-  PlayerClass.Etoile,
-  PlayerClass.Luster,
-];
-
-const classes = [
-  PlayerClass.Erper,
-  PlayerClass.Hunter,
-  PlayerClass.Fighter,
-  PlayerClass.Ranger,
-  PlayerClass.Gunner,
-  PlayerClass.Force,
-  PlayerClass.Techer,
-  PlayerClass.Braver,
-  PlayerClass.Bouncer,
-  PlayerClass.Summoner,
-  ...scionClasses
-];
+import { scionClasses, classes } from "../classes";
 
 export interface ClassPairing {
   main: PlayerClass;
