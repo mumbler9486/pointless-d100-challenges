@@ -30,7 +30,7 @@ export const pickAFewRandomUniquely = <TValue>(list: TValue[], count: number) =>
   let listCopy = list.slice();
   const result = [];
   for (let i = 0; i < count; i++) {
-    if (list.length == 0) {
+    if (listCopy.length == 0) {
       return result;
     }
     const picking = pickRandom(listCopy);

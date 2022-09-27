@@ -116,5 +116,5 @@ const classRestrictions = {
 export const generateClassRestrictions = (playerMainClass: PlayerClass) => {
   const restrictions = classRestrictions[playerMainClass];
 
-  return pickAFewRandomUniquely(restrictions, randInt(0, 2))
+  return pickAFewRandomUniquely(restrictions, randInt(0, 3))
 }
