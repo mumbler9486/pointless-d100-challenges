@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { assets } from '$app/paths';
 	import type { PlayerClass } from 'src/lib/classes';
 	import { listEmptyPlaceholder } from 'src/lib/utils/placeholder';
 
@@ -16,7 +17,7 @@
 				{/each}
 			</ul>
 			{#if classRestrictions.includes('Must use the meme Ph sub pallete')}
-				<img src="images/ph_meme_weapon_pallete.png" alt="ph meme sub-pallete" />
+				<img src="{assets}/images/ph_meme_weapon_pallete.png" alt="ph meme sub-pallete" />
 			{/if}
 		</div>
 	</div>
