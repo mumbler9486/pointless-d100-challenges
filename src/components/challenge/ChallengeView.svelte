@@ -10,7 +10,9 @@
 </script>
 
 <div class="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-base-200 p-2 rounded">
-	<div class="bg-secondary text-secondary-content p-4 rounded text-2xl col-span-3 text-center">
+	<div
+		class="bg-secondary text-secondary-content p-4 rounded col-span-3 text-center text-lg sm:text-2xl"
+	>
 		<div class="absolute">#{id}</div>
 		<div>{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}</div>
 	</div>
@@ -34,7 +36,7 @@
 		<ConditionChallengeView otherChallenges={challenge.otherChallenges} />
 	</div>
 	<div
-		class="bg-accent row-start-5 text-accent-content rounded p-4 text-xl col-span-3 shadow-lg text-center"
+		class="bg-accent row-start-5 text-accent-content rounded p-4 col-span-3 shadow-lg text-center text-lg sm:text-xl"
 	>
 		<div class="line-through">
 			While <span class="text-bold">{challenge.bigChallenge}</span>

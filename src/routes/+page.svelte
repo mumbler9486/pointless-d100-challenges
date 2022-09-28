@@ -39,7 +39,7 @@
 </div>
 
 {#if generatedChallenges.length > 0}
-	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-12">
+	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-4 lg:px-10 xl:px-12">
 		<ChallengeView id={challengeId} {challenge} />
 	</div>
 {/if}
