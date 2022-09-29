@@ -1,11 +1,11 @@
 <script lang="ts">
 	import 'src/app.css';
 	import Footer from 'src/components/Footer.svelte';
-	import Header from 'src/components/Header.svelte';
+	import GithubCorner from 'src/components/GithubCorner.svelte';
 </script>
 
 <main>
-	<Header />
+	<GithubCorner />
 	<div>
 		<slot />
 	</div>
