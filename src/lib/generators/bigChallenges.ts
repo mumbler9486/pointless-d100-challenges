@@ -4,7 +4,7 @@ const additionalChallenges = [
   'reading fleet chat and complaining about how sodam skates',
   'going on fleet chat to tell everyone how you were able to do one thing differently and that saved you 1 second of time after only 1 attempt',
   'your mom is cleaning your room',
-  '"Are you winning son?"',
+  '"Are ya winning son?"',
   'writing a love letter to your waifu',
   'bench pressing your mom',
   'drawing me like one of your anime waifus',
