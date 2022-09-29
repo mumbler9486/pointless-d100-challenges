@@ -4,7 +4,7 @@
 	import Header from 'src/components/Header.svelte';
 </script>
 
-<main class="container flex flex-col">
+<main>
 	<Header />
 	<div>
 		<slot />
