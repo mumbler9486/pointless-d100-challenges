@@ -18,6 +18,8 @@
 
 		generatedChallenges.push(newChallenge);
 		generatedChallenges = generatedChallenges;
+
+		console.log(`Generated challenge #${generatedChallenges.length}`, newChallenge);
 	};
 </script>
 
