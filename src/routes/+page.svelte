@@ -21,7 +21,7 @@
 	};
 </script>
 
-<div class="hero mt-2">
+<div class="hero">
 	<div class="hero-content text-center">
 		<div class="max-w-lg">
 			<h1 class="text-5xl font-bold">Pointless D100/HTPD Challenge Generator</h1>
