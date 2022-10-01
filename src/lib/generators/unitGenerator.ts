@@ -186,8 +186,6 @@ const unitConditions = [
   "Must have mastery V",
   "Must have a non guardian soul augment",
   "Must have a __ Di Soul type augment",
-  "Not allowed to use Phrase type augments",
-  "Must use an Exp Boost, Meseta Fever, or Lucky charm augment",
   "Must have a Rappy Fever augment",
   "Must have MIGHT BOOST",
   "Must have a Flict/Alter type augment",
