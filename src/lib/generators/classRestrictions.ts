@@ -21,7 +21,8 @@ const classRestrictions = {
   [PlayerClass.Fighter]: [
     "Counter banned",
     "Must remain at 70% health or higher",
-    "Double Saber Whirlwind (L) skill ring banned (including attached to units)"
+    "Double Saber Whirlwind (L) skill ring banned (including attached to units)",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Ranger]: [
     "Steady shot only",
@@ -36,7 +37,8 @@ const classRestrictions = {
   [PlayerClass.Gunner]: [
     "Weapon action banned",
     "Never reach 90+ combo",
-    "S-roll banned"
+    "S-roll banned",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Force]: [
     "Use only one tech element type for all techs",
@@ -57,12 +59,14 @@ const classRestrictions = {
     "Counter banned",
     "Steadfast will katana",
     "Use Weak stance bow in phase 3",
-    "Million storm must be used for 5 seconds every 2 minutes"
+    "Million storm must be used for 5 seconds every 2 minutes",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Bouncer]: [
     "Cannot activate techs by weapon action",
     "When using strike gust, must hold for at least 5 seconds",
-    "When closing distance, always approach with soaring blades weapon action spam"
+    "When closing distance, always approach with soaring blades weapon action spam",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Summoner]: [
     "Marron banned",
@@ -92,14 +96,16 @@ const classRestrictions = {
     "Zanverse banned",
     "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
     "100% uptime on shifted massen",
-    "Must use the meme Ph sub pallete"
+    "Must use the meme Ph sub pallete",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Etoile]: [
     "Every phase change, change weapons, use that weapon for the entire phase",
     "Damage bouncer banned (set to 0)",
     "Weapon gear attack actions banned (counter allowed)",
     "Every time you use a PA, the next one you must use a different PA or attack",
-    "Etoile standing massive banned"
+    "Etoile standing massive banned",
+    "Max 100 Weapon Action activations in the run",
   ],
   [PlayerClass.Luster]: [
     "Every phase change, change styles, use that style for the entire phase (purge style banned)",
@@ -110,6 +116,7 @@ const classRestrictions = {
     "Stay below 500 volts",
     "Smart PA only",
     "Phrase decay on your weapon but you cannot apply jellen to the boss ever",
+    "Max 100 Weapon Action activations in the run",
   ],
 };
 

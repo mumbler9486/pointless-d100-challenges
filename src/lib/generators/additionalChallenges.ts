@@ -46,7 +46,8 @@ const modifiableChallenges = [
   'Minimizing the number of jumps used (including PAs that put you in the air)',
   'Getting all goddess buffs',
   'Every triple slam you must take damage',
-  'During every down phase, blizzard, or firewall blast, scratch for 1 item in the FUN scratch'
+  'During every down phase, blizzard, or firewall blast, scratch for 1 item in the FUN scratch',
+  'Set max framerate to 30 FPS'
 ];
 
 export const generateAdditionalChallenges = () => {
