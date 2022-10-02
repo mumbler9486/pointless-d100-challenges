@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<GithubCorner />
+	<GithubCorner href="https://github.com/mumbler9486/pointless-d100-challenges" />
 	<div>
 		<slot />
 	</div>

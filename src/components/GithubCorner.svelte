@@ -1,9 +1,8 @@
-<a
-	href="https://github.com/mumbler9486/pointless-d100-challenges"
-	target="_blank"
-	class="github-corner"
-	aria-label="View source on GitHub"
->
+<script lang="ts">
+	export let href: string;
+</script>
+
+<a {href} target="_blank" class="github-corner" aria-label="View source on GitHub">
 	<svg
 		class="fill-base-neutral"
 		width="80"
