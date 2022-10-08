@@ -23,6 +23,7 @@ const classRestrictions = {
     "Must remain at 70% health or higher",
     "Double Saber Whirlwind (L) skill ring banned (including attached to units)",
     "Max 100 Weapon Action activations in the run",
+    "Must use wise stance only and attack from behind"
   ],
   [PlayerClass.Ranger]: [
     "Steady shot only",
