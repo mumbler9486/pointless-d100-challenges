@@ -32,7 +32,8 @@ const classRestrictions = {
     "Blight round banned",
     "Must use jellen shot at least every 2 minutes",
     "Homing volley (including custom) banned",
-    "Precision blight rounds ring banned (including attached to units)"
+    "Precision blight rounds ring banned (including attached to units)",
+    "Weak bullet must go on the body and not the core"
   ],
   [PlayerClass.Gunner]: [
     "Weapon action banned",
