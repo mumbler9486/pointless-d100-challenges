@@ -23,6 +23,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Pointless D100/HTPD Challenge Generator</title>
+</svelte:head>
+
 <div class="hero">
 	<div class="hero-content text-center">
 		<div class="max-w-lg">
