@@ -24,7 +24,7 @@
 
 	const generateClassPickOptions = (...triggers: any) => {
 		const options = selectSubClass
-			? classOptions.filter((c) => !scionClasses.includes(c.label))
+			? classOptions.filter((c) => c.label != PlayerClass.Hero)
 			: classOptions;
 
 		return options.map((x) => {
