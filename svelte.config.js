@@ -11,7 +11,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: !prod ? "" : "/pointless-d100-challenges",
+			base: "",
 		},
 		adapter: adapter({
 			pages: "build",
