@@ -21,8 +21,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install surge and Deploy 🚀
+        run: |
+          npm install -g surge
+          surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
