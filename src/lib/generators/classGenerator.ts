@@ -8,16 +8,13 @@ export interface ClassPairing {
 }
 
 export const generateClass = (fixedMain?: PlayerClass, fixedSub?: PlayerClass) => {
+  if (fixedSub == PlayerClass.Hero) {
+    throw new Error("Hero cannot be subclassed.");
+  }
+
   if (fixedMain && scionClasses.includes(fixedMain)) {
     return {
       main: fixedMain,
-      sub: undefined,
-    } as ClassPairing;
-  }
-
-  if (fixedSub && scionClasses.includes(fixedSub)) {
-    return {
-      main: fixedSub,
       sub: undefined,
     } as ClassPairing;
   }
@@ -27,17 +24,15 @@ export const generateClass = (fixedMain?: PlayerClass, fixedSub?: PlayerClass) =
   }
 
   if (fixedMain && !fixedSub) {
-    const sub = pickRandomSub(fixedMain);
     return {
       main: fixedMain,
-      sub
+      sub: pickRandomSub(fixedMain)
     } as ClassPairing;
   }
 
   if (!fixedMain && fixedSub) {
-    const main = pickRandomMain(fixedSub);
     return {
-      main,
+      main: pickRandomMain(fixedSub),
       sub: fixedSub
     } as ClassPairing;
   }
