@@ -47,7 +47,8 @@ const modifiableChallenges = [
   'Getting all goddess buffs',
   'Every triple slam you must take damage',
   'During every down phase, blizzard, or firewall blast, scratch for 1 item in the FUN scratch',
-  'Set max framerate to 30 FPS'
+  'Set max framerate to 30 FPS',
+  'On final phase flaps, do not attack the core but attack the arms around the stage. Face away from the core.'
 ];
 
 export const generateAdditionalChallenges = () => {
