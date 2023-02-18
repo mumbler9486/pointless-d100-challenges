@@ -32,8 +32,7 @@
 		<div class="max-w-lg">
 			<h1 class="text-5xl font-bold">Pointless D100/HTPD Challenge Generator</h1>
 			<p class="my-4">
-				If I had a meseta for everytime someone says they'll attempt D100/HTPD with some made up
-				challenge...
+				If I had a meseta for everytime someone says they'll do &quot;D100 but...&quot;
 			</p>
 			<div class="grid gap-2 grid-cols-3">
 				<ClassSelector bind:selection={mainClassChoice} />
