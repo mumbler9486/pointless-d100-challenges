@@ -14,7 +14,7 @@
 </script>
 
 {#if isProd && !isHttps}
-	<div class="fixed p-4 z-50 rounded-br-md bg-primary">
+	<div class="fixed z-50 rounded-br-md bg-primary p-4">
 		<p class="text-3xl text-primary-content">Transferring to the HTTPS version of the website...</p>
 	</div>
 {/if}

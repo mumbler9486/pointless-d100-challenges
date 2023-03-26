@@ -34,17 +34,17 @@
 			<p class="my-4">
 				If I had a meseta for everytime someone says they'll do &quot;D100 but...&quot;
 			</p>
-			<div class="grid gap-2 grid-cols-3">
+			<div class="grid grid-cols-3 gap-2">
 				<ClassSelector bind:selection={mainClassChoice} />
 				<ClassSelector selectSubClass bind:selection={subClassChoice} />
-				<button class="btn btn-primary" on:click={createChallenge}>Challenge Me Bitch</button>
+				<button class="btn-primary btn" on:click={createChallenge}>Challenge Me Bitch</button>
 			</div>
 		</div>
 	</div>
 </div>
 
 {#if generatedChallenges.length > 0}
-	<div class="container flex flex-col bg-base-100 mx-auto max-w-6xl px-4 lg:px-10 xl:px-12">
+	<div class="container mx-auto flex max-w-6xl flex-col bg-base-100 px-4 lg:px-10 xl:px-12">
 		<ChallengeView id={challengeId} {challenge} />
 	</div>
 {/if}

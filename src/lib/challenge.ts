@@ -1,19 +1,19 @@
-import type { PlayerClass } from "./classes";
-import type { WeaponRestriction } from "./weapons";
-import type { UnitRestriction } from "./units";
+import type { PlayerClass } from './classes';
+import type { WeaponRestriction } from './weapons';
+import type { UnitRestriction } from './units';
 
 export interface Challenge {
-  mainClass: PlayerClass;
-  subClass?: PlayerClass;
+	mainClass: PlayerClass;
+	subClass?: PlayerClass;
 
-  backUnitRestriction: UnitRestriction;
-  armsUnitRestriction: UnitRestriction;
-  legsUnitRestriction: UnitRestriction;
+	backUnitRestriction: UnitRestriction;
+	armsUnitRestriction: UnitRestriction;
+	legsUnitRestriction: UnitRestriction;
 
-  weaponRestriction: WeaponRestriction;
+	weaponRestriction: WeaponRestriction;
 
-  classRestrictions: string[];
-  otherChallenges: string[];
+	classRestrictions: string[];
+	otherChallenges: string[];
 
-  bigChallenge: string;
+	bigChallenge: string;
 }

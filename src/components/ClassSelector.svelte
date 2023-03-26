@@ -59,7 +59,7 @@
 	}));
 </script>
 
-<select bind:value={classSelection} class="select select-bordered max-w-xs">
+<select bind:value={classSelection} class="select-bordered select max-w-xs">
 	<option selected>{defaultValue}</option>
 	{#each selectableOptions as opt}
 		<option disabled={opt.disabled} value={opt.key}>{opt.label}</option>

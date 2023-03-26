@@ -4,7 +4,7 @@
 	export let otherChallenges: string[];
 </script>
 
-<div class="card bg-base-100 shadow-xl text-sm">
+<div class="card bg-base-100 text-sm shadow-xl">
 	<div class="card-body">
 		<h2 class="card-title">Challenges</h2>
 		<ul>

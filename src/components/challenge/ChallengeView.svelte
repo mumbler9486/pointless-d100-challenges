@@ -9,9 +9,9 @@
 	export let id: number;
 </script>
 
-<div class="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-base-200 p-2 rounded">
+<div class="grid grid-cols-1 gap-2 rounded bg-base-200 p-2 md:grid-cols-2 xl:grid-cols-3">
 	<div
-		class="bg-secondary text-secondary-content p-4 rounded col-span-1 md:col-span-2 xl:col-span-3 text-center text-lg sm:text-2xl"
+		class="col-span-1 rounded bg-secondary p-4 text-center text-lg text-secondary-content sm:text-2xl md:col-span-2 xl:col-span-3"
 	>
 		<div class="absolute">#{id}</div>
 		<div>{challenge.mainClass}{challenge.subClass ? `/${challenge.subClass}` : ''}</div>
@@ -36,7 +36,7 @@
 		<ConditionChallengeView otherChallenges={challenge.otherChallenges} />
 	</div>
 	<div
-		class="bg-accent row-start-5 text-accent-content rounded p-4 col-span-1 md:col-span-2 xl:col-span-3 shadow-lg text-center text-lg sm:text-xl"
+		class="col-span-1 row-start-5 rounded bg-accent p-4 text-center text-lg text-accent-content shadow-lg sm:text-xl md:col-span-2 xl:col-span-3"
 	>
 		<div class="line-through">
 			While <span class="text-bold">{challenge.bigChallenge}</span>

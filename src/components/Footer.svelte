@@ -1,5 +1,5 @@
 <footer
-	class="flex footer footer-size text-right py-2 px-4 mr-12 mt-2 bottom-0 right-0 bg-base-200 text-neutral-content rounded ml-auto xl:fixed xl:mr-0 xl:rounded-none xl:rounded-tl-md"
+	class="footer-size footer bottom-0 right-0 mr-12 mt-2 ml-auto flex rounded bg-base-200 py-2 px-4 text-right text-neutral-content xl:fixed xl:mr-0 xl:rounded-none xl:rounded-tl-md"
 >
 	<p class="text-xs">PSO2:NGS<br />©SEGA</p>
 </footer>
