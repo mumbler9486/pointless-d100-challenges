@@ -181,7 +181,7 @@ const unitConditions = [
 	'Unit grind level is less than +5',
 	'Unit is not grinded (+0)',
 	'Must use a Reaper/Slayer augment',
-	'Must use a ward/panic/blind/poison augment',
+	'Must use a radiant/technique/lightning/projectile ward augment',
 	'Must have might boost',
 	'Must have mastery V',
 	'Must have a non guardian soul augment',

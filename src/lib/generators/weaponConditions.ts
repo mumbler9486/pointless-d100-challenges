@@ -247,7 +247,7 @@ const weaponConditions = [
 	'Must have a receptor type augment',
 	'Must have a Ligand type augment',
 	'Must use a Reaper/Slayer augment',
-	'Must use a ward/panic/blind/poison augment',
+	'Must use a shock/freeze/panic/poison augment',
 	'Must have might boost',
 	'Must have mastery V',
 	'Must have a non guardian soul augment',
